@@ -1,0 +1,7 @@
+.special-deal {
+  border-radius: 10px;
+  width: 256px;
+  height: 147px;
+  background: linear-gradient(90deg, #d4183d 0%, rgba(212, 24, 61, 0.8) 100%);
+  font-family: "Inter", sans-serif;
+}
