@@ -1,0 +1,55 @@
+.header {
+  width: 100%;
+  margin: 0;
+}
+.header-container {
+  margin: 0 auto;
+  display: flex;
+  max-width: 1440px;
+  padding: 10px 32px;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+}
+
+.logo-group {
+  display: flex;
+  justify-content: start;
+  gap: 32px;
+}
+
+.logo-container {
+  max-width: 106px;
+}
+
+.filter-buttons {
+  display: flex;
+  max-width: 167px;
+  justify-content: space-between;
+}
+
+.menu-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+}
+
+.active {
+  color: #0a0a0a;
+}
+
+.non-active {
+  color: #717182;
+}
+
+.btn {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.right-btn {
+  width: 36px;
+  height: 36px;
+}
