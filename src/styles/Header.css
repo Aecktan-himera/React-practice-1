@@ -1,6 +1,8 @@
 .header {
   width: 100%;
   margin: 0;
+  border-bottom: solid 2px lightgray;
+  max-height: 64px;
 }
 .header-container {
   margin: 0 auto;
