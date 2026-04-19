@@ -7,12 +7,12 @@ function SpecialDeal() {
 
     return (
         <>
-        <button><img src={Close} /></button>
-        <p><img src={Clock} /> Special Deal!</p>
-        <p>Register now to unlock exclusive offers and discounts</p>
+        <button className="close-btn"><img src={Close} /></button>
+        <p className="special"> <img src={Clock} /> Special Deal!</p>
+        <p className="special-promo">Register now to unlock exclusive offers and discounts</p>
         <div className="timer">
-        <p>Offer expires in:</p>
-        <p>0:59:59</p>
+        <p className="special-promo">Offer expires in:</p>
+        <p className="special-timer">0:59:59</p>
         </div>
         </>
     )

@@ -7,8 +7,8 @@ function Footer() {
       <div className="footer-container">
         <div className="footer-blocks">
           <div className="about">
+            <h3>About</h3>
             <ul>
-              <li>About</li>
               <li>About Us</li>
               <li>Careers</li>
               <li>Press</li>
@@ -16,25 +16,25 @@ function Footer() {
           </div>
           <div className="support">
             <ul>
-              <li>About</li>
-              <li>About Us</li>
-              <li>Careers</li>
-              <li>Press</li>
+              <li>Support</li>
+              <li>Contact</li>
+              <li>FAQ</li>
+              <li>Shipping</li>
             </ul>
           </div>
           <div className="legal">
             <ul>
-              <li>About</li>
-              <li>About Us</li>
-              <li>Careers</li>
-              <li>Press</li>
+              <li>Legal</li>
+              <li>Privacy Policy</li>
+              <li>Terms of Service</li>
+              <li>Returns</li>
             </ul>
           </div>
           <div className="newsletter">
             <ul>
-              <li>About</li>
-              <li>About Us</li>
-              <input placeholder="Email"></input>
+              <li>Newsletter</li>
+              <li>Subscribe for exclusive deals</li>
+
             </ul>
           </div>
         </div>
