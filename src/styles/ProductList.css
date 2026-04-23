@@ -1,0 +1,11 @@
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.total-amount {
+  font-size: 0.9rem;
+  color: #717182;
+  margin-bottom: 1rem;
+}

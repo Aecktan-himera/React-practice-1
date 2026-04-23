@@ -1,0 +1,75 @@
+.input {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 8px 12px;
+  font: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  font-size: 16px;
+  color: rgba(10, 10, 10, 0.5);
+  background: #f3f3f5;
+  /*display: block;
+  width: 100%;
+  
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  outline: none;
+  box-sizing: border-box;*/
+}
+
+/* Состояние фокуса 
+.input:focus {
+  border-color: #86b7fe;
+  box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.25);
+}
+
+/* Состояние disabled 
+.input:disabled {
+  background-color: #e9ecef;
+  opacity: 1;
+  cursor: not-allowed;
+}
+
+/* Placeholder 
+.input::placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+
+/* ===== Размеры ===== 
+
+.input--small {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  border-radius: 4px;
+}
+
+.input--medium {
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 6px;
+}
+
+.input--large {
+  padding: 0.75rem 1rem;
+  font-size: 1.25rem;
+  border-radius: 8px;
+}
+
+/* ===== Состояние ошибки ===== 
+
+.input--error {
+  border-color: #dc3545;
+}
+
+.input--error:focus {
+  border-color: #dc3545;
+  box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.25);
+}
+*/

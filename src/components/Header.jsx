@@ -10,8 +10,8 @@ function Header() {
         <div className="header-container">
           <div className="logo-group">
             <div className="logo-container">
-              <a href="#">
-                <img src={Logo} alt="logo" />
+              <a href="tv">
+                <span className="logo-text">TechStore</span>
               </a>
             </div>
             <nav className="filter-buttons">

@@ -1,0 +1,17 @@
+.wrapper {
+    display: flex;
+}
+
+aside {
+  flex: 0 0 280px;
+}
+
+main {
+  flex: 1;
+}
+
+.sort-bar {
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+}

@@ -1,12 +1,14 @@
 import ProductCard from "../components/ProductCard";
+import '../styles/ProductList.css'
+import Sidebar from "./Sidebar";
 
 function ProductList({ products }) {
-    const displayedProducts = products.slice(0, 8);
+
   return (
     <>
-      <p className="total-amount">{displayedProducts.length} products</p>
+      {/*<p className="total-amount">{products.length} products</p>*/}
       <div className="products-container">
-        {displayedProducts.map((product) => (
+        {products.map((product) => (
           <ProductCard key={product.id} product={product} />
         ))}
       </div>

@@ -1,4 +1,6 @@
 import "../styles/Footer.css"
+import Button from "./Button";
+import Input from "./Input";
 
 
 function Footer() {
@@ -15,27 +17,26 @@ function Footer() {
             </ul>
           </div>
           <div className="support">
+            <h3>Support</h3>
             <ul>
-              <li>Support</li>
               <li>Contact</li>
               <li>FAQ</li>
               <li>Shipping</li>
             </ul>
           </div>
           <div className="legal">
+            <h3>Legal</h3>
             <ul>
-              <li>Legal</li>
               <li>Privacy Policy</li>
               <li>Terms of Service</li>
               <li>Returns</li>
             </ul>
           </div>
           <div className="newsletter">
-            <ul>
-              <li>Newsletter</li>
-              <li>Subscribe for exclusive deals</li>
-
-            </ul>
+            <h3>Newsletter</h3>
+           <p>Subscribe for exclusive deals</p>
+           <Input></Input>
+          <Button variant="primary">Subscribe</Button>
           </div>
         </div>
         <div className="copyright">
