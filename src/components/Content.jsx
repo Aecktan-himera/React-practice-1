@@ -33,8 +33,9 @@ function Content({
       <main>
         <div className="sort-bar">
           <p className="total-amount">{filteredProducts.length} products</p>
+          <label className='sort-by' htmlFor='product-select'>Sort by:
           <select
-            className="select"
+            className="product-select"
             value={sortOrder}
             onChange={(e) => onSortOrderChange(e.target.value)}
           >
@@ -42,6 +43,7 @@ function Content({
             <option value="price-asc">Price: Low to High</option>
             <option value="price-desc">Price: High to Low</option>
           </select>
+          </label>
         </div>
         <ProductList products={filteredProducts} />
       </main>

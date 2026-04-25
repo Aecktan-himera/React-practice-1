@@ -8,18 +8,27 @@
   margin: 0 auto;
   display: flex;
   max-width: 1440px;
-  padding: 10px 32px;
+  padding: 14px 32px;
   justify-content: space-between;
   align-items: center;
   font-family: "Inter", sans-serif;
 }
 
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none; /* убирает подчёркивание */
+  color: inherit; /* наследует цвет родительского элемента */
+}
+
 .logo-text {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.2;
-  cursor: pointer;
-  user-select: none;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 133%;
+  letter-spacing: -0.03em;
+  text-align: center;
   color: #0a0a0a;
   transition: opacity 0.2s;
 }
@@ -50,11 +59,11 @@
   text-align: center;
 }
 
-.active {
+.menu-btn.active {
   color: #0a0a0a;
 }
 
-.non-active {
+.menu-btn.non-active {
   color: #717182;
 }
 

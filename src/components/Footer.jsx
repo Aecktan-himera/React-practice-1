@@ -9,7 +9,7 @@ function Footer() {
       <div className="footer-container">
         <div className="footer-blocks">
           <div className="about">
-            <h3>About</h3>
+            <h3 className="footer-heading">About</h3>
             <ul>
               <li>About Us</li>
               <li>Careers</li>
@@ -17,7 +17,7 @@ function Footer() {
             </ul>
           </div>
           <div className="support">
-            <h3>Support</h3>
+            <h3 className="footer-heading">Support</h3>
             <ul>
               <li>Contact</li>
               <li>FAQ</li>
@@ -25,7 +25,7 @@ function Footer() {
             </ul>
           </div>
           <div className="legal">
-            <h3>Legal</h3>
+            <h3 className="footer-heading">Legal</h3>
             <ul>
               <li>Privacy Policy</li>
               <li>Terms of Service</li>
@@ -33,10 +33,12 @@ function Footer() {
             </ul>
           </div>
           <div className="newsletter">
-            <h3>Newsletter</h3>
-           <p>Subscribe for exclusive deals</p>
-           <Input></Input>
-          <Button variant="primary">Subscribe</Button>
+            <h3 className="footer-heading">Newsletter</h3>
+           <form>
+           <label className="subscribe" htmlFor="subscribe-input">Subscribe for exclusive deals</label><br />
+           <Input className='subscribe-input'></Input>
+          <Button variant="primary" className="subscribe-btn">Subscribe</Button>
+          </form>
           </div>
         </div>
         <div className="copyright">

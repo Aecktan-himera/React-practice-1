@@ -1,6 +1,10 @@
 import {products} from "../data/products";
 import { useState } from "react";
 import "../styles/ProductCard.css";
+import LeftArrow from "../assets/left-arrow.svg"
+import RightArrow from "../assets/right-arrow.svg"
+import HeartActive from "../assets/HeartActive.svg"
+import HeartNonActive from "../assets/HeartNonActive.svg"
 
 function ProductCard({ product }) {
   const { id, category, make, model, price, images, isSpecialOffer, brand } =
@@ -49,14 +53,14 @@ const [currentImage, setCurrentImage] = useState(0);
               onClick={prevImage}
               aria-label="Previous image"
             >
-              ‹
+              <img src={LeftArrow} />
             </button>
             <button
               className="product-card__arrow product-card__arrow--right"
               onClick={nextImage}
               aria-label="Next image"
             >
-              ›
+              <img src={RightArrow} />
             </button>
             <div className="product-card__dots">
               {images.map((_, idx) => (
@@ -79,7 +83,7 @@ const [currentImage, setCurrentImage] = useState(0);
           onClick={() => setIsFavorite(!isFavorite)}
           aria-label={isFavorite ? "Remove from favorites" : "Add to favorites"}
         >
-          {isFavorite ? "♥" : "♡"}
+          <img src={isFavorite ? HeartActive : HeartNonActive} />
         </button>
       </div>
 
