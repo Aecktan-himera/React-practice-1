@@ -1,7 +1,6 @@
-import "../styles/Footer.css"
+import "../styles/Footer.css";
 import Button from "./Button";
 import Input from "./Input";
-
 
 function Footer() {
   return (
@@ -34,11 +33,16 @@ function Footer() {
           </div>
           <div className="newsletter">
             <h3 className="footer-heading">Newsletter</h3>
-           <form>
-           <label className="subscribe" htmlFor="subscribe-input">Subscribe for exclusive deals</label><br />
-           <Input className='subscribe-input'></Input>
-          <Button variant="primary" className="subscribe-btn">Subscribe</Button>
-          </form>
+            <form>
+              <label className="subscribe" htmlFor="subscribe-input">
+                Subscribe for exclusive deals
+              </label>
+              <br />
+              <Input className="subscribe-input"></Input>
+              <Button variant="primary" className="subscribe-btn">
+                Subscribe
+              </Button>
+            </form>
           </div>
         </div>
         <div className="copyright">

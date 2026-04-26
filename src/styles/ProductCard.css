@@ -25,7 +25,6 @@
   object-fit: contain;
 }
 
-/* Badge */
 .product-card__badge {
   position: absolute;
   top: 8px;
@@ -63,14 +62,15 @@
 .product-card__arrow--left {
   left: 8px;
 }
+
 .product-card__arrow--right {
   right: 8px;
 }
+
 .product-card__arrow:hover {
   background: #fff;
 }
 
-/* Dots */
 .product-card__dots {
   position: absolute;
   bottom: 8px;
@@ -79,6 +79,7 @@
   display: flex;
   gap: 6px;
 }
+
 .product-card__dot {
   width: 6px;
   height: 6px;
@@ -87,6 +88,7 @@
   cursor: pointer;
   transition: background 0.2s;
 }
+
 .product-card__dot.active {
   border-radius: 33554400px;
   width: 16px;
@@ -94,7 +96,6 @@
   background: #030213;
 }
 
-/* Favorite heart */
 .product-card__favorite {
   position: absolute;
   top: 8px;
@@ -152,7 +153,6 @@
   padding: 0;
 }
 
-/* Add to cart button */
 .product-card__add-btn {
   background: #030213;
   color: #fff;
@@ -174,17 +174,18 @@
   background: #2a2a40;
 }
 
-/* Counter */
 .product-card__counter {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 12px;
   margin-top: auto;
 }
 .product-card__counter button {
-  width: 32px;
-  height: 32px;
-  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  padding: 0px 12px;
   border: 1px solid #ddd;
   background: #f3f3f5;
   font-size: 18px;
@@ -195,7 +196,8 @@
   justify-content: center;
 }
 .product-card__counter span {
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
   color: #0a0a0a;
 }

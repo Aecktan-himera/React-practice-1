@@ -4,6 +4,7 @@
   max-width: 1440px;
   padding: 14px 32px;
   min-height: 1086px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 aside {
@@ -34,4 +35,47 @@ main {
   width: 176px;
   height: 42px;
   background: #f3f3f5;
+}
+
+/* 1024 – 1279px */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .wrapper {
+    max-width: 1264px;
+  }
+}
+
+/* 640 – 1023px */
+@media (min-width: 640px) and (max-width: 1023px) {
+  .wrapper {
+    max-width: 1008px;
+    flex-direction: column;
+  }
+
+  aside {
+    flex: none;
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  main {
+    width: 100%;
+  }
+}
+
+/* 360 – 639px */
+@media (min-width: 360px) and (max-width: 639px) {
+  .wrapper {
+    max-width: 624px;
+    flex-direction: column;
+  }
+
+  aside {
+    flex: none;
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  main {
+    width: 100%;
+  }
 }

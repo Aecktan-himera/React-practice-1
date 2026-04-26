@@ -8,7 +8,7 @@
 .footer-container {
   margin: 0 auto;
   max-width: 1440px;
-  padding-top: 32px;
+  padding: 32px;
   font-family: "Inter", sans-serif;
 }
 
@@ -51,7 +51,6 @@ li {
   width: 231px;
   height: 42px;
   margin-bottom: 0;
-
 }
 
 .subscribe-btn {
@@ -69,4 +68,35 @@ li {
   line-height: 150%;
   text-align: center;
   color: #717182;
+}
+
+/* 1024 – 1279px */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .footer-container {
+    max-width: 1264px;
+  }
+}
+
+/* 640 – 1023px */
+@media (min-width: 640px) and (max-width: 1023px) {
+  .footer-container {
+    max-width: 1008px;
+  }
+  .footer-blocks {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .footer-blocks > div {
+    flex: 0 0 calc(50% - 16px);
+  }
+}
+
+/* 360 – 639px */
+@media (min-width: 360px) and (max-width: 639px) {
+  .footer-container {
+    max-width: 624px;
+  }
+  .footer-blocks {
+    flex-direction: column;
+  }
 }

@@ -1,13 +1,13 @@
-import '../styles/Button.css';
+import "../styles/Button.css";
 
 const Button = ({
   children,
-  variant = 'primary',
-  size = 'medium',
+  variant = "primary",
+  size = "medium",
   disabled = false,
-  type = 'button',
+  type = "button",
   onClick,
-  className = '',
+  className = "",
   ...rest // собираем все оставшиеся пропсы
 }) => {
   // Формируем строку классов: базовый 'btn' + классы для варианта и размера + пользовательские

@@ -1,16 +1,16 @@
-import {products} from "../data/products";
+import { products } from "../data/products";
 import { useState } from "react";
 import "../styles/ProductCard.css";
-import LeftArrow from "../assets/left-arrow.svg"
-import RightArrow from "../assets/right-arrow.svg"
-import HeartActive from "../assets/HeartActive.svg"
-import HeartNonActive from "../assets/HeartNonActive.svg"
+import LeftArrow from "../assets/left-arrow.svg";
+import RightArrow from "../assets/right-arrow.svg";
+import HeartActive from "../assets/HeartActive.svg";
+import HeartNonActive from "../assets/HeartNonActive.svg";
 
 function ProductCard({ product }) {
   const { id, category, make, model, price, images, isSpecialOffer, brand } =
     product;
 
-const [currentImage, setCurrentImage] = useState(0);
+  const [currentImage, setCurrentImage] = useState(0);
   const [isFavorite, setIsFavorite] = useState(false);
   const [cartCount, setCartCount] = useState(0);
 
@@ -77,9 +77,7 @@ const [currentImage, setCurrentImage] = useState(0);
         )}
 
         <button
-          className={`product-card__favorite ${
-            isFavorite ? "active" : ""
-          }`}
+          className={`product-card__favorite ${isFavorite ? "active" : ""}`}
           onClick={() => setIsFavorite(!isFavorite)}
           aria-label={isFavorite ? "Remove from favorites" : "Add to favorites"}
         >
@@ -90,9 +88,7 @@ const [currentImage, setCurrentImage] = useState(0);
       <div className="product-card__info">
         <p className="product-card__brand">{brand}</p>
         <p className="product-card__model">{model}</p>
-        <p className="product-card__price">
-          ${price.toLocaleString("en-US")}
-        </p>
+        <p className="product-card__price">${price.toLocaleString("en-US")}</p>
 
         {cartCount === 0 ? (
           <button className="product-card__add-btn" onClick={handleAddToCart}>
@@ -100,9 +96,13 @@ const [currentImage, setCurrentImage] = useState(0);
           </button>
         ) : (
           <div className="product-card__counter">
-            <button onClick={decrement} aria-label="Decrease quantity">−</button>
+            <button onClick={decrement} aria-label="Decrease quantity">
+              −
+            </button>
             <span>{cartCount} in cart</span>
-            <button onClick={increment} aria-label="Increase quantity">+</button>
+            <button onClick={increment} aria-label="Increase quantity">
+              +
+            </button>
           </div>
         )}
       </div>

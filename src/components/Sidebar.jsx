@@ -1,16 +1,17 @@
 import React, { useState } from "react";
 import SpecialDeal from "./SpecialDeal";
-import "../styles/Sidebar.css";
+import "../styles/SideBar.css";
 import Input from "./Input";
 import Button from "./Button";
-//import Select from "./Select";
 
 function Sidebar({ brands, selectedBrand, onBrandChange }) {
   return (
     <>
       <div className="filters-container">
         <p className="filters-heading">Filters</p>
-        <label className="filters-label" htmlFor="brand-select">Brand</label>
+        <label className="filters-label" htmlFor="brand-select">
+          Brand
+        </label>
         <select
           className="brand-select"
           value={selectedBrand}
@@ -25,9 +26,10 @@ function Sidebar({ brands, selectedBrand, onBrandChange }) {
         </select>
         <label className="filters-label">Price Range</label>
         <div className="price-range">
-        <Input placeholder="0" className="min-range"/> <Input placeholder="5000" className="max-range"/>
+          <Input placeholder="0" className="min-range" />{" "}
+          <Input placeholder="5000" className="max-range" />
         </div>
-        
+
         <Button className="filters-apply">Apply Filters</Button>
       </div>
       <div className="special-deal">

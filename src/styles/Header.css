@@ -2,16 +2,16 @@
   width: 100%;
   margin: 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  max-height: 64px;
+  height: 64px; /* базовая высота для десктопа */
 }
 .header-container {
   margin: 0 auto;
   display: flex;
   max-width: 1440px;
   padding: 14px 32px;
-  justify-content: space-between;
   align-items: center;
   font-family: "Inter", sans-serif;
+  /* justify-content: space-between; убираем – теперь управляем отступами */
 }
 
 a,
@@ -19,8 +19,8 @@ a:link,
 a:visited,
 a:hover,
 a:active {
-  text-decoration: none; /* убирает подчёркивание */
-  color: inherit; /* наследует цвет родительского элемента */
+  text-decoration: none;
+  color: inherit;
 }
 
 .logo-text {
@@ -36,20 +36,16 @@ a:active {
   opacity: 0.7;
 }
 
-.logo-group {
-  display: flex;
-  justify-content: start;
-  gap: 32px;
-}
-
 .logo-container {
-  max-width: 106px;
+  max-width: 106px; /* ограничиваем ширину логотипа */
 }
 
+/* Фильтры на десктопе идут сразу после логотипа с отступом 32px */
 .filter-buttons {
   display: flex;
   max-width: 167px;
   justify-content: space-between;
+  margin-left: 32px; /* заменяет gap из удалённого .logo-group */
 }
 
 .menu-btn {
@@ -73,7 +69,82 @@ a:active {
   cursor: pointer;
 }
 
+/* Кнопки корзины и логина прижимаем к правому краю */
+.buttons-container {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
 .right-btn {
   width: 36px;
   height: 36px;
+}
+
+/* 1024 – 1279px */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .header-container {
+    max-width: 1264px;
+  }
+}
+
+/* 640 – 1023px */
+@media (min-width: 640px) and (max-width: 1023px) {
+  .header-container {
+    max-width: 1008px;
+  }
+}
+
+/* 360 – 639px */
+@media (min-width: 360px) and (max-width: 639px) {
+  .header {
+    height: auto; /* шапка растягивается по содержимому */
+  }
+  .header-container {
+    max-width: 624px;
+    flex-wrap: wrap;
+    justify-content: space-between; /* логотип слева, кнопки справа */
+    align-items: center;
+    align-content: flex-start;
+    height: 144px;
+  }
+
+  .logo-container {
+    order: 0;
+  }
+
+  .buttons-container {
+    order: 1;
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .filter-buttons {
+    order: 2;
+    flex-basis: 100%;
+    max-width: 100%;
+    margin: 13px 0;
+    display: flex; /* убеждаемся, что это flex-контейнер */
+    justify-content: space-between; /* оставляем для гарантии, можно заменить на stretch */
+    height: 67px;
+    align-items: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  /* Кнопки внутри блока фильтров становятся одинаковой ширины */
+  .filter-buttons .menu-btn {
+    flex: 1; /* каждая кнопка занимает равную долю доступного пространства */
+    text-align: center;
+    /* высоту кнопок можно задать при необходимости */
+  }
+
+  .menu-btn {
+    height: 42px;
+  }
+
+  .menu-btn.active {
+    border-bottom: 2px solid #0a0a0a;
+    padding: 0px 0px 2px;
+  }
 }
